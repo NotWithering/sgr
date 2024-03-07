@@ -1,4 +1,5 @@
-# SGR [![MIT License](https://img.shields.io/badge/License-MIT-a10b31)](https://github.com/NotWithering/sgr/blob/main/LICENSE) [![Go Report Card](https://goreportcard.com/badge/github.com/NotWithering/sgr)](https://goreportcard.com/report/github.com/NotWithering/sgr)
+# SGR
+[![MIT License](https://img.shields.io/badge/License-MIT-a10b31)](https://github.com/NotWithering/sgr/blob/main/LICENSE) [![Go Report Card](https://goreportcard.com/badge/github.com/NotWithering/sgr)](https://goreportcard.com/report/github.com/NotWithering/sgr)
 
 **SGR** (**S**elect **G**raphic **R**endition) is a simple Go package constaining a large block of constants that attempts to implement every SGR Ansi escape code listed [here](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters).
 
