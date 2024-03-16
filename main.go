@@ -70,7 +70,7 @@ const (
 	Overline     string = "\x1b[53m" // Not supported in Terminal.app
 	NotFramed    string = "\x1b[54m" // Neither framed nor encircled
 	NotEncircled string = "\x1b[54m" // Neither framed nor encircled
-	NotOverlined string = "\x1b[55m"
+	NotOverlined string = "\x1b[55m" // Turn underline off
 
 	UnderlineColor    string = "\x1b[58;5;" // Set underline color where n is a 4-bit color index
 	UnderlineColorRGB string = "\x1b[58;2;" // Set underline color where R;G;B are from 0 to 255
@@ -107,5 +107,5 @@ const (
 	BgHiCyan    string = "\x1b[106m" // VGA (85, 255, 255)
 	BgHiWhite   string = "\x1b[107m" // VGA (255, 255, 255)
 
-	M string = "m"
+	M string = "m" // \x1b[0m <- The M at the end to close off an ansi escape code
 )
