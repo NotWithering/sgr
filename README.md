@@ -10,13 +10,22 @@ Hate how other Ansi packages use functions and structs that you have to convert 
 package main
 
 import (
+	"fmt"
+
 	"github.com/notwithering/sgr"
 )
 
-const woah string = sgr.Italic + "Hello, world!" + sgr.Reset
+const woah string = sgr.Italic +
+	sgr.BgColorRGB + "255;0;85" + sgr.M +
+	sgr.Underline +
+	sgr.Overline +
+	sgr.Faint +
+	"wow this is so cool!" +
+	sgr.Reset
 
 func main() {
 	fmt.Println(woah)
 }
+
 ```
-> _Hello, world!_
+<img src="https://github.com/notwithering/sgr/assets/124115470/75dc1db3-f0f2-4a5b-89a1-a9d906510bed" height=50 alt="text 'wow this is so cool!' with magenta background and a white underline and overline">
