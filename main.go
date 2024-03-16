@@ -44,7 +44,10 @@ const (
 	FgMagenta string = "\x1b[35m" // VGA (170, 0, 170)
 	FgCyan    string = "\x1b[36m" // VGA (0, 170, 170)
 	FgWhite   string = "\x1b[37m" // VGA (170, 170, 170)
-	// FgColor string = "\x1b[38m"
+
+	FgColor    string = "\x1b[38;5;" // Set foreground color where n is a 4-bit color index
+	FgColorRGB string = "\x1b[38;2;" // Set foreground color where R;G;B are from 0 to 255
+
 	FgDefault string = "\x1b[39m" // Implementation defined (according to standard)
 
 	BgBlack   string = "\x1b[40m" // VGA (0, 0, 0)
@@ -55,7 +58,10 @@ const (
 	BgMagenta string = "\x1b[45m" // VGA (170, 0, 170)
 	BgCyan    string = "\x1b[46m" // VGA (0, 170, 170)
 	BgWhite   string = "\x1b[47m" // VGA (170, 170, 170)
-	// BgColor string = "\x1b[48m"
+
+	BgColor    string = "\x1b[48;5;" // Set background color where n is a 4-bit color index
+	BgColorRGB string = "\x1b[48;2;" // Set background color where R;G;B are from 0 to 255
+
 	BgDefault string = "\x1b[49m" // Implementation defined (according to standard)
 
 	NotMonospace string = "\x1b[50m" // T.61 and T.416
@@ -65,7 +71,10 @@ const (
 	NotFramed    string = "\x1b[54m" // Neither framed nor encircled
 	NotEncircled string = "\x1b[54m" // Neither framed nor encircled
 	NotOverlined string = "\x1b[55m"
-	// UnderlineColor string = "\x1b[58m"
+
+	UnderlineColor    string = "\x1b[58;5;" // Set underline color where n is a 4-bit color index
+	UnderlineColorRGB string = "\x1b[58;2;" // Set underline color where R;G;B are from 0 to 255
+
 	DefaultUnderlineColor string = "\x1b[59m" // Not in standard; implemented in Kitty, VTE, mintty, and iTerm2.
 
 	IdeogreamUnderline      string = "\x1b[60m" // Ideogram underline or right side line; Rarely supported
@@ -97,4 +106,6 @@ const (
 	BgHiMagenta string = "\x1b[105m" // VGA (255, 85, 255)
 	BgHiCyan    string = "\x1b[106m" // VGA (85, 255, 255)
 	BgHiWhite   string = "\x1b[107m" // VGA (255, 255, 255)
+
+	M string = "m"
 )
