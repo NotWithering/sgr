@@ -3,7 +3,7 @@
 
 **SGR** (**S**elect **G**raphic **R**endition) is a simple Go package containing a large block of constants that attempts to implement every SGR Ansi escape code listed [here](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters).
 
-I was annoyed how I couldn't use a traditional ansi package in constants due to their complicated approach, so I just decided to make one big constant.
+Hate how other Ansi packages use functions and structs that you have to convert 20 times to get something you can print? This package is ONLY constants meaning you can have an RGB underline on text that is fast blinking with Fraktur font all inside of one constant. 
 
 ## Example
 ```go
