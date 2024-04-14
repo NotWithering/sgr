@@ -7,6 +7,7 @@ const (
 	Faint     string = "\x1b[2m" //	May be implemented as a light font weight like bold.
 	Italic    string = "\x1b[3m" // Not widely supported. Sometimes treated as inverse or blink.
 	Underline string = "\x1b[4m" // Style extensions exists for Kitty, VTE, mintty, iTerm2 and Konsole.
+	Blink     string = "\x1b[5m" // Sets blinking to less than 150 times per minute
 	SlowBlink string = "\x1b[5m" // Sets blinking to less than 150 times per minute
 	FastBlink string = "\x1b[6m" // MS-DOS ANSI.SYS 150+ per minute; not widely supported
 	Invert    string = "\x1b[7m" // Swap foreground and background colors; inconsistent emulation
