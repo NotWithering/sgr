@@ -107,5 +107,15 @@ const (
 	BgHiCyan    string = "\x1b[106m" // VGA (85, 255, 255)
 	BgHiWhite   string = "\x1b[107m" // VGA (255, 255, 255)
 
-	M string = "m" // \x1b[0m <- The M at the end to close off an ansi escape code
+	M         string = "m" // \x1b[0m <- The M at the end to close off an ansi escape code
+	Separator string = "m" // \x1b[38;5; <- The ; inbetween arguments
+
+	Black   string = "0" // VGA (85, 85, 85)
+	Red     string = "1" // VGA (255, 85, 85)
+	Green   string = "2" // VGA (85, 255, 85)
+	Yellow  string = "3" // VGA (255, 255, 85)
+	Blue    string = "4" // VGA (85, 85, 255)
+	Magenta string = "5" // VGA (255, 85, 255)
+	Cyan    string = "6" // VGA (85, 255, 255)
+	White   string = "7" // VGA (255, 255, 255)
 )
