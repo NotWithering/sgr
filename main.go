@@ -1,4 +1,4 @@
-// Package SGR contains a large block of constants that attempts to implement every SGR Ansi escape code.
+// Package SGR contains a large block of constants that attempts to implement every SGR ANSI escape code.
 package sgr
 
 const (
