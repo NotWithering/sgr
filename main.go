@@ -4,7 +4,7 @@ package sgr
 const (
 	Reset     string = "\x1b[0m" // All attributes become turned off
 	Bold      string = "\x1b[1m" // As with faint, the color change is a PC (SCO / CGA) invention.
-	Faint     string = "\x1b[2m" //	May be implemented as a light font weight like bold.
+	Faint     string = "\x1b[2m" // May be implemented as a light font weight like bold.
 	Italic    string = "\x1b[3m" // Not widely supported. Sometimes treated as inverse or blink.
 	Underline string = "\x1b[4m" // Style extensions exists for Kitty, VTE, mintty, iTerm2 and Konsole.
 	Blink     string = "\x1b[5m" // Sets blinking to less than 150 times per minute
