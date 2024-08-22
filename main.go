@@ -46,8 +46,8 @@ const (
 	FgCyan    string = "\x1b[36m" // VGA (0, 170, 170)
 	FgWhite   string = "\x1b[37m" // VGA (170, 170, 170)
 
-	FgColor    string = "\x1b[38;5;" // Set foreground color where n is a 4-bit color index
-	FgColorRGB string = "\x1b[38;2;" // Set foreground color where R;G;B are from 0 to 255
+	FgColor    string = "\x1b[38;5;" // Set foreground color. Next argument is a color index
+	FgColorRGB string = "\x1b[38;2;" // Set foreground color. Next arguments are r;g;b where all are uint8 as string
 
 	FgDefault string = "\x1b[39m" // Implementation defined (according to standard)
 
@@ -60,8 +60,8 @@ const (
 	BgCyan    string = "\x1b[46m" // VGA (0, 170, 170)
 	BgWhite   string = "\x1b[47m" // VGA (170, 170, 170)
 
-	BgColor    string = "\x1b[48;5;" // Set background color where n is a 4-bit color index
-	BgColorRGB string = "\x1b[48;2;" // Set background color where R;G;B are from 0 to 255
+	BgColor    string = "\x1b[48;5;" // Set background color. Next argument is a color index
+	BgColorRGB string = "\x1b[48;2;" // Set background color. Next arguments are r;g;b where all are uint8 as string
 
 	BgDefault string = "\x1b[49m" // Implementation defined (according to standard)
 
@@ -73,8 +73,8 @@ const (
 	NotEncircled string = "\x1b[54m" // Neither framed nor encircled
 	NotOverlined string = "\x1b[55m" // Turn underline off
 
-	UnderlineColor    string = "\x1b[58;5;" // Set underline color where n is a 4-bit color index
-	UnderlineColorRGB string = "\x1b[58;2;" // Set underline color where R;G;B are from 0 to 255
+	UnderlineColor    string = "\x1b[58;5;" // Set underline color. Next argument is a color index
+	UnderlineColorRGB string = "\x1b[58;2;" // Set underline color. Next arguments are r;g;b where all are uint8 as string
 
 	DefaultUnderlineColor string = "\x1b[59m" // Not in standard; implemented in Kitty, VTE, mintty, and iTerm2.
 
